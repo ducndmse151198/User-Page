@@ -1,0 +1,116 @@
+.footer {
+  background-color: $text-primary;
+  display: block;
+
+  a {
+    color: $text-color;
+  }
+
+  &-top {
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 8rem;
+  }
+
+  &-desc {
+    font-size: 12px;
+    line-height: lineHeight(30, 16);
+    font-weight: 400;
+    color: $text-color;
+
+    a {
+      color: #252b36;
+      font-weight: 600;
+    }
+  }
+
+  &-logo {
+    font-size: 3rem;
+  }
+
+  &-socials {
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    transition: 0.2s;
+
+    &-item {
+      color: $text-color;
+      cursor: pointer;
+      font-size: 2.5rem;
+    }
+
+    &-item:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #151111;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+
+  &-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+
+    &-item {
+      color: $text-color;
+      font-size: 1.4rem;
+    }
+  }
+
+  &-phones,
+  &-email {
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  strong {
+    color: #151111;
+    font-weight: 400;
+  }
+
+  &-address {
+    color: $text-color;
+    font-size: 14px;
+    line-height: lineHeight(30, 16);
+  }
+
+  &-container {
+    padding: 15px 0;
+  }
+
+  &-bottom {
+    background-color: $text-darker;
+  }
+
+  &-rocket {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: $purple-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+
+    &-container {
+      position: relative;
+    }
+  }
+}

@@ -1,0 +1,3 @@
+@function lineHeight($height, $font) {
+  @return $height / $font;
+}

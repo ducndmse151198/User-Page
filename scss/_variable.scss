@@ -1,0 +1,34 @@
+$text-color: #151111;
+$text-primary: #e6bb7a;
+$text-darker: #c9a46d;
+$text-secondary: #dbdbdb;
+$gray-darker: #b4b4b4;
+$gray-lighter: rgb(167, 167, 167);
+$color-primary: #ffcd7a;
+$color-secondary: #e7dfd2;
+$green-color: #6dd054;
+$green-darker: #02a696;
+$yellow-color: #c7ca52;
+$yellow-dark: #b3b62a;
+$purple-color: #5552ca;
+$blue-color: #4960a5;
+$red-color: #cb4545;
+$black-color: #151111;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

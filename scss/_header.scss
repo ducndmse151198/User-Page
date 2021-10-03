@@ -1,0 +1,139 @@
+.header {
+  background-color: $text-primary;
+  padding: 1.5rem 0;
+  &-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    form {
+      display: flex;
+      align-items: center;
+    }
+
+    &-image {
+      width: 47px;
+      margin-right: 2.6rem;
+    }
+
+    .input-warp {
+      width: 30.5rem;
+      height: 47px;
+      background-color: #fff;
+      border-radius: 30px;
+
+      overflow: hidden;
+      position: relative;
+
+      input {
+        position: absolute;
+        right: 0;
+        width: calc(100% - 45px);
+        height: 47px;
+        border-radius: 30px;
+        font-size: 1.5rem;
+        border: none;
+        outline: none;
+      }
+
+      label {
+        position: absolute;
+        top: 50%;
+        left: 45px;
+        transform: translateY(-50%);
+        color: $text-secondary;
+        pointer-events: none;
+        transition: 0.3s ease-in-out;
+        font-size: 1.5rem;
+      }
+
+      &.active label {
+        opacity: 0;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 70%;
+        opacity: 0.2;
+      }
+    }
+  }
+
+  &-profile {
+    display: flex;
+    align-items: center;
+
+    &-image-wrapper {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-link {
+      margin-right: 2rem;
+      color: $text-color;
+      transform: translateY(5.5px);
+      transition: 0.25s linear;
+      font-size: 1.5rem;
+
+      &:hover {
+        color: #0c4ca3;
+      }
+    }
+
+    &-dropdown {
+      position: relative;
+      cursor: pointer;
+
+      .dropdown-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transform: translateY(10px);
+      }
+      .dropdown-item {
+        width: 110px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border-radius: 30px;
+        transform: translateX(-30%);
+        opacity: 0;
+        color: $text-color;
+        background-color: #fff;
+        transition: 0.25s linear;
+        font-size: 1.5rem;
+
+        img {
+          margin-right: 0.4rem;
+        }
+
+        &:hover {
+          background-color: rgb(226, 224, 224);
+        }
+      }
+
+      &:hover .dropdown-item {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-dropdown-image {
+    width: 17px;
+  }
+}

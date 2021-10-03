@@ -1,0 +1,232 @@
+.user-feedback-main {
+  width: 100%;
+  margin-top: 10rem;
+  margin-bottom: 12rem;
+}
+.container-main {
+  background-color: #fff;
+  height: 60rem;
+  width: 115rem;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 10px;
+}
+.container-main .device {
+  height: 5.7rem;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  gap: 0 1.4rem;
+  align-items: flex-end;
+  font-size: 2.3rem;
+  font-weight: bold;
+  position: relative;
+}
+.container-main .device .tab-select-wrapper {
+  display: flex;
+  align-items: center;
+  align-items: flex-end;
+  gap: 0 1.4rem;
+}
+.container-main .device p {
+  cursor: pointer;
+}
+.container-main .device span {
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  width: 93px;
+  height: 3.5px;
+  background-color: #666666;
+  border-radius: 50px;
+  transition: all 0.2s linear;
+  display: none;
+}
+.container-main .device span.active {
+  display: block;
+}
+.container-main .device ion-icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  transform: translateY(-4px);
+}
+.container-main .device ion-icon:hover {
+  color: green;
+}
+.list-items-wrapper {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.list-items-wrapper.active {
+  display: flex;
+}
+.icon-ion {
+  font-size: 2.7rem;
+}
+.list-feedback {
+  width: 35rem;
+}
+.text {
+  flex: 1;
+}
+.legend-device-name {
+  font-size: small;
+  margin-left: 2rem;
+  color: #808080;
+}
+.device-name-field {
+  width: 25rem;
+  height: 5.5rem;
+  margin: 2rem 0rem 0rem 2rem;
+  border-radius: 4px;
+}
+.select-device {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  outline: 0px;
+  text-indent: 17.5px;
+  font-size: 1.5rem;
+}
+.select-location {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  outline: 0px;
+  text-indent: 17.5px;
+  font-size: 1.5rem;
+  resize: none;
+}
+.location-field {
+  width: 25rem;
+  height: 5.5rem;
+  margin: 2rem 0rem 0rem 2rem;
+  border-radius: 4px;
+}
+.legend-location {
+  font-size: small;
+  margin-left: 2rem;
+  color: #808080;
+}
+.select-reason {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  outline: 0px;
+  text-indent: 17.5px;
+  font-size: 1.5rem;
+}
+.reason-field {
+  width: 25rem;
+  height: 5.5rem;
+  margin: 2rem 0rem 0rem 2rem;
+  border-radius: 4px;
+}
+.legend-reason {
+  font-size: small;
+  margin-left: 2rem;
+  color: #808080;
+}
+.select-quantity {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  outline: 0px;
+  text-indent: 17.5px;
+  font-size: 1.5rem;
+}
+.quantity-field {
+  width: 9.35rem;
+  height: 5.5rem;
+  margin: 2rem 0rem 0rem 2rem;
+  border-radius: 4px;
+}
+.legend-quantity {
+  font-size: small;
+  margin-left: 2rem;
+  color: #808080;
+}
+.select-description {
+  width: 75rem;
+  height: 12rem;
+  border: 0px;
+  outline: 0px;
+  text-indent: 17.5px;
+  font-size: 1.5rem;
+  resize: none;
+}
+.description-field {
+  width: 9.35rem;
+  margin: 2rem 0rem 0rem 2rem;
+  border-radius: 4px;
+}
+.legend-description {
+  font-size: small;
+  margin-left: 2rem;
+  color: #808080;
+}
+.images-wrapper {
+  width: 3rem;
+  margin: 1rem 0rem 0rem 1.8rem;
+  display: flex;
+}
+.container-wrapper {
+  height: 48rem;
+}
+.input-file-wrap {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+.input-file-wrap input {
+  border: none;
+  outline: 0;
+  margin-left: 1rem;
+}
+.input-file-wrap label ion-icon {
+  font-size: 2.5rem;
+  transform: translateY(1px);
+  cursor: pointer;
+}
+.send-btn {
+  width: 20rem;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.send-btn .send {
+  font-size: 25px;
+  padding: 1rem 7rem;
+  border-radius: 6px;
+  outline: 0px;
+  background-color: #ddc15f;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.img-feedback {
+  margin-left: 2rem;
+  width: 75rem;
+  max-height: 12rem;
+  height: 100%;
+  margin-top: 2rem;
+  display: flex;
+  gap: 0 20px;
+  overflow-x: auto;
+}
+.img-feedback img {
+  height: 100%;
+  object-fit: cover;
+}
+.tab-list-wrapper {
+  width: calc(100% - 57px);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
