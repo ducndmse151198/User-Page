@@ -22,6 +22,78 @@
   font-weight: bold;
   position: relative;
 }
+
+.device .list-items-help {
+  position: absolute;
+  right: 3rem;
+  background-color: transparent;
+  max-width: 35px;
+  max-height: 35px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s linear;
+}
+
+.device .list-items-help.background-change {
+  background-color: #dddddd;
+}
+
+.device .list-items-help:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.device .list-items-help .feedback-help {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.device .list-items-help .help-message--hover {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #818181;
+  color: #fff;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+
+.device .list-items-help .help-message--hover.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.device .list-items-help .help-message {
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  width: 130px;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform-origin: 90% top;
+  display: none;
+  user-select: none;
+  /* right: 2rem; */
+}
+
+.device .list-items-help .help-message.show {
+  display: block;
+}
+
 .container-main .device .tab-select-wrapper {
   display: flex;
   align-items: center;
@@ -30,6 +102,7 @@
 }
 .container-main .device p {
   cursor: pointer;
+  user-select: none;
 }
 .container-main .device span {
   position: absolute;

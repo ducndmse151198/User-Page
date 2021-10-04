@@ -126,14 +126,7 @@ function handleShowImage(e) {
  * --2 thay add after click remove Element
  */
 var tmp = 1;
-let flag = true;
 plusbtn.addEventListener("click", () => {
-  if (flag) {
-    alert(
-      'If you want to delete form, You only have to double click at this form (Exp: "Device")'
-    );
-    flag = false;
-  }
   let check = Array.from(
     document.querySelectorAll(".tab-select-wrapper p")
   ).length;
@@ -270,4 +263,48 @@ Array.from(categoryList).forEach((category) => {
     );
     Array.from(categoryItems)[index].classList.add("active");
   });
+});
+
+const helpBtn = document.querySelector(".feedback-help");
+const containerMain = document.querySelector(".container-main");
+helpBtn.addEventListener("mouseover", () => {
+  setTimeout(() => {
+    helpBtn
+      .closest(".list-items-help")
+      .querySelector(".help-message--hover")
+      .classList.add("show");
+  }, 500);
+});
+
+helpBtn.addEventListener("mouseout", () => {
+  helpBtn
+    .closest(".list-items-help")
+    .querySelector(".help-message--hover")
+    .classList.remove("show");
+});
+
+helpBtn.addEventListener("click", () => {
+  helpBtn
+    .closest(".list-items-help")
+    .querySelector(".help-message")
+    .classList.toggle("show");
+  helpBtn
+    .closest(".list-items-help")
+    .querySelector(".help-message--hover")
+    .classList.remove("show");
+  helpBtn.closest(".list-items-help").classList.toggle("background-change");
+});
+
+containerMain.addEventListener("click", (e) => {
+  if (!e.target.classList.contains("feedback-help")) {
+    helpBtn
+      .closest(".list-items-help")
+      .querySelector(".help-message--hover")
+      .classList.remove("show");
+    helpBtn
+      .closest(".list-items-help")
+      .querySelector(".help-message")
+      .classList.remove("show");
+    helpBtn.closest(".list-items-help").classList.remove("background-change");
+  }
 });
